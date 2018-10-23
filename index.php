@@ -39,9 +39,15 @@ require_once("config.php");
 //echo $aluno;
 
 //Alterar um usuário na tabela
+//$aluno = new Usuario();
+//$aluno->loadById(8);
+//$aluno->update("professor", "!@#$%¨&*");
+//echo $aluno;
+
+//Deletar um usuário na tabela
 $aluno = new Usuario();
-$aluno->loadById(8);
-$aluno->update("professor", "!@#$%¨&*");
+$aluno->loadById(7);
+$aluno->delete();
 echo $aluno;
 
 //////////////////////////////////////
