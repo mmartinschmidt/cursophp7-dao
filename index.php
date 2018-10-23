@@ -33,11 +33,17 @@ require_once("config.php");
 //$aluno = new Usuario();
 //$aluno->setDeslogin("aluno");
 //$aluno->setDessenha("@lun0");
-$aluno = new Usuario("aluno","@lun0");
-$aluno->insert();
+//////////////////////
+//$aluno = new Usuario("aluno","@lun0");
+//$aluno->insert();
+//echo $aluno;
+
+//Alterar um usuário na tabela
+$aluno = new Usuario();
+$aluno->loadById(8);
+$aluno->update("professor", "!@#$%¨&*");
 echo $aluno;
 
 //////////////////////////////////////
-
 
  ?>
